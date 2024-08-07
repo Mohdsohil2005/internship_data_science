@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header-1 {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #040404, #242424, #656565);
+}
+
+.head {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo-text {
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+.Nav{
+    margin-left: 650px;
+margin-top: 0%;
+}
+.Nav ul{
+display: flex;
+}
+.Nav ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    /* margin-right: 50px; */
+}
+.Nav ul li a{
+    display: block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.Nav ul li a:hover{
+    color: #0ef;
+    text-shadow: 0 0 5px #0ef 0 0 25px #0ef;
+    /* box-shadow: 0 0 5px #0ef 0 0 25px #0ef; */
+    box-shadow: 5px 7px 25px rgba(165, 247, 243, 0.5);
+}
+#o{
+    color: #0ef;
+}
+.contact-form {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 5px;
+    }
+.row{
+      margin-top: -50px;
+    }
+form button a{
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+    }
+</style>
+<body>
+    <div class="header-1">
+        <div class="head">
+            <header id="header">
+                <div class="logo">
+                    <div class="logo-text">Mohd. S<span id="o">oh</span>il</div>
+                </div>
+                <nav class="Nav">
+
+                    <ul>
+                        <li class="item"><a href="home.html">Home</a></li>
+                        <li class="item"><a href="about.html">About</a></li>
+                        <li class="item"><a href="projects.html">Projects</a></li>
+                        <li class="item"><a href="#Contact">Contact Us</a></li>
+            
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="contact-form">
+                            <h3 class="text-center mb-4">Contact Us</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+                                    <button type="submit" class="btn btn-primary btn-block"><a href="thanks.html">Submit</a></button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
