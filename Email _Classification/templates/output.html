@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/project.css">
+</head>
+<style>
+        body{
+            background: url('/static/files/email\ img.jpg') no-repeat center/cover;
+            height: 470px;
+        
+         }
+         .container{
+            height:300px ;
+            width: 300px;  
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 128px;
+            margin-left: 100px;
+            border-radius: 20px;
+            text-align: center; 
+            box-shadow: 0 0 20px rgba(249, 248, 248, 25);
+         }
+         .card{
+            font-size: 22px;
+            color: white
+         }
+         .pred{
+            font-size: 20px;
+            color: white
+         }
+         button{
+            margin-top: 30px;
+            font-size: 18px;
+            border: 2px solid white;
+            border-radius: 20px;
+            height: 30px;
+            width: 180px;
+            background: transparent;
+            /* background-color: rgb(68, 68, 249); */
+            
+         }
+         button:hover{
+            border: 2px solid white;
+            box-shadow: 0 0 20px rgba(249, 248, 248, 25);  
+            
+         }
+         a{
+            color: white;
+            text-decoration: none;
+         }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="contact-form">
+            <h2>Prediction Result</h2><hr>
+            
+            <div class="pred">
+            <p><strong>Email Type :</strong> {{ output }}</p><hr>
+            </div><br>
+            <button>
+                <a href="/">Go Back</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
