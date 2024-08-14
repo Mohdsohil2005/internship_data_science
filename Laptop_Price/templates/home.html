@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: url('/static/files/1.png');
+            height: 480px;
+            rotate: 180;
+            margin-top: 120px;
+              }
+              nav{
+                font-size: 1.5rem;
+              }
+            .contact{
+                height: 300px;
+                width:600px ;
+                color: white;
+                margin-left: 50px;
+                margin-top: 40px;
+                /* backdrop-filter: blur(30px); */
+                /* border:  white ; */
+                /* border-radius: 20px; */
+                text-align: center; 
+                /* font-size: 20px; */
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                /* box-shadow: 0 0 20px rgba(249, 248, 248, 25);       */
+             }
+             .contact button{
+                width: 190px;
+                height: 38px;
+                background: transparent;
+                /* background-color: black; */
+                color: red;
+                border-radius: 20px;
+                border: 2px solid white;
+                font-size: 17px;
+                
+             }
+             .contact button:hover{
+                /* background: rgb(63, 150, 250);
+                color: white; */
+                /* box-shadow: 0 0 20px rgb(250, 49, 49); */
+                color: white;
+                box-shadow: 0 0 5px red,
+                0 0 25px red, 0 0 50px red,
+                0 0 100px red, 0 0 200px red; 
+                        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><span style="color: red;">LAPTOP </span>WORLD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a style="color: red;" class="nav-link" href="#">Home </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact">
+        <br>
+        <h1 style="margin-top: 50px;">Welcome to the <span style="color: red;"> LAPTOP </span> <span> WORLD</span></h1>
+        <br>
+        <h4>Use our tool to predict of a laptop based on its <br> features and specification</h4>
+        <br><br>
+        <a href="/project">
+        <button>Check Price !</button>
+        </a>
+    </div>   
+      
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome (for icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
