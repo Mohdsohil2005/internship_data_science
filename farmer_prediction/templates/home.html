@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer World</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            background: url('https://e0.pxfuel.com/wallpapers/593/742/desktop-wallpaper-anime-field-farm-field-nature.jpg') no-repeat;
+            background-size: 1398px;
+            margin: 0;
+            
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* min-height: 80vh; */
+        }
+        .box{
+            height: 350px;
+            width: 600px;
+            margin-left: 50px;
+            margin-top: 60px;
+            /* border: 2px solid green; */
+            background: transparent;
+            text-align: center;
+            /* box-shadow: 0 0 20px rgba(0,0,0,0.1); */
+        }
+        a button{
+            margin-top: 40px;
+            width: 180px;
+            height: 30px;
+            font-size: 18px;
+            border-radius: 20px;
+            background: transparent ;
+            color:black ;
+            border: 2px solid green;
+            cursor: pointer;
+            &:hover{
+                color: white;
+                background-color: green;
+                border: 2px solid black;
+                box-shadow: 0 0 5px green,
+                0 0 20px green, 0 0 50px green, 0 0 100px green;
+            }
+        }
+        .home-sci i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: rgb(13, 13, 13) 2px solid;
+    border-radius: 50%;
+    font-size: 15px;
+    color: green;
+    text-decoration: none;
+    margin: 3px 10px 3px 0;
+    transition: 0.5s ease;
+    text-align: center;
+
+}
+.home-sci i:hover {
+    background: green;
+    color: white;
+    box-shadow: 0 0 20px green;
+    transform: rotate(360deg);
+
+}
+
+    </style>
+</head>
+<body>
+   <h2 style="font-size: 33px;margin-left: 38px; margin-top: 18px;"> <span style="color: rgb(31, 185, 31);">Farmer</span>  World</h2>
+   <div class="box">
+    <h1>Welcome to <span style="color:rgb(31, 185, 31) ;">Farmer</span> World</h1>
+    <h3>Your ultimate tool for choosing the best crops based on <br> your <span style="color:rgb(31, 185, 31) ;">enviroment</span> </h3>
+    <a href="/project">
+        <button>Enter Soil Data </button>
+    </a>
+    <br><br><hr style="background-color: green;border: none; height: 2px;"><br>
+    <section id="contact" class="py-5">
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/mohd-sohil-4a4b2a277"><i
+                    class="fa-brands fa-linkedin "></i></a>
+            <a href="https://instagram.com/kingsohil2005?utm_source=qr&igshid=OGU0MmVlOWVjOQ=="><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Mohdsohil2005"><i class="fa-brands fa-github"></i></a>
+    
+            <a href="https://wa.me/qr/2KL7Z4KVYCO2O1"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </section>
+   </div>
+</body>
+</html>

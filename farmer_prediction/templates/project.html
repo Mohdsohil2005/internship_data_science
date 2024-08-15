@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter Collection Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://e0.pxfuel.com/wallpapers/593/742/desktop-wallpaper-anime-field-farm-field-nature.jpg') no-repeat;
+            background-size: 1400px;
+            /* margin: 0;
+            
+            padding: 0; */
+            display: flex;
+            flex-direction: column;
+            /* min-height: 80vh; */
+        }
+        header {
+            background: transparent;
+            
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo h1 {
+            margin: 0;
+            color: black;
+            margin-left: 10px;
+            font-size: 33px;
+        }
+        .logo h1 span {
+            color: rgb(31, 185, 31);
+        }
+        .form-container {
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 20PX;
+            margin-left: 40px;
+            width: 90%;
+            max-width: 470px;
+            /* flex-grow: 1; */
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 25px;
+            color: rgb(31, 185, 31);
+           }
+        .form-group {
+            margin-bottom: 10px;
+            color: green;
+        }
+        .form-group label {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .form-group input {
+            width: 380px;
+            padding: 10px;
+            margin-left: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        #btn1{
+            width: 200px;
+            color: green;
+            border-radius: 20px;
+            border: 2px solid white;
+            font-size: 18px;
+            background-color:transparent;
+            cursor: pointer;
+        }
+        #btn2{
+            width: 200px;
+            color: yellow;
+            border-radius: 20px;
+            border: 2px solid white;
+            font-size: 18px;
+            margin-left: 240px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        #btn1:hover{
+            color: white;
+                box-shadow: 0 0 5px green,
+                0 0 20px green, 0 0 50px green, 0 0 100px green;
+        }
+        #btn2:hover{
+            color: white;
+                box-shadow: 0 0 5px yellow,
+                0 0 25px yellow, 0 0 50px yellow,
+                0 0 100px yellow, 0 0 200px yellow;
+        }
+        footer {
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+            color: black;
+            font-size: 14px;
+            margin-top: 0px;
+        }
+        .form-group button {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>Farmer</span> World</h1>
+        </div>
+    </header>
+    <div style="display: flex;">
+        <div class="form-container" style="margin-left: 150px; color: #f1f1f1;">
+            <h2 style="text-align: center;">Enter Soil Parameters</h2>
+            <form action="{{ url_for('submit') }}" method="post">
+                <div class="form-group">
+                    <label for="n">Nitrogen :</label>
+                    <input placeholder="e.g., 10" type="text" id="n" name="n" required>
+                </div>
+                <div class="form-group">
+                    <label for="p">Phosphorus :</label>
+                    <input placeholder="e.g., 15" type="text" id="p" name="p" required>
+                </div>
+                <div class="form-group">
+                    <label for="k">Potassium :</label>
+                    <input placeholder="e.g., 20" type="text" id="k" name="k" required>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Temperature :</label>
+                    <input placeholder="e.g., 35°C" type="text" id="temperature" name="temperature" required>
+                </div>
+                <div class="form-group">
+                    <label for="humidity">Humidity :</label>
+                    <input placeholder="e.g., 67%" type="text" id="humidity" name="humidity" required>
+                </div>
+                <div class="form-group">
+                    <label for="ph">pH :</label>
+                    <input placeholder="e.g., 6.5" type="text" id="ph" name="ph" required>
+                </div>
+                <div class="form-group">
+                    <label for="rainfall">Rainfall :</label>
+                    <input placeholder="e.g., 100mm" type="text" id="rainfall" name="rainfall" required>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="/">
+                        <button id="btn1">Back</button>
+                    </a>
+                    <button id="btn2" type="submit">Submit</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Sohil Farmer World. All rights reserved.
+    </footer>
+</body>
+</html>
