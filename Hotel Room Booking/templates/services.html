@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(246, 247, 247);
+    }
+    :root {
+  --navbar-height: 59px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  position: sticky;
+  background-color: white;
+}
+
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 60px;
+  border-radius: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  margin-left: 650px;
+}
+
+.navbar::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+.navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li a:hover {
+  background-color: black;
+  color: white;
+}
+.main1{
+display: flex;
+}   
+ #s1{
+        height: 400px;
+        width: 300px;
+        margin-top: 40px;
+        margin-left: 110px;
+        border: 1px solid black;
+        text-align: center;
+        background-color: white;
+        
+        &#s1:hover{
+          box-shadow: 0 0 15px black;
+        }
+    }
+    #s1 img{
+        height: 200px;
+        width: 300px;
+        border-radius: 0 0  20px 20px;
+        cursor: pointer;
+    }
+    .main2{
+        display: flex;   
+     }
+
+     footer {
+            /* background-color: #f1f1f1; */
+            background: grey;
+            text-align: center;
+            padding: 1em;
+            font-size: 20px;
+            position: relative;
+            width: 1308px;
+            bottom: 0;
+            color: white;
+        }
+    
+</style>
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            <img src="/static/hotellogo.jpg" alt="">
+        </div>
+
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="/project">Booking</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <section class="main1">
+            <div id="s1">
+              <img src="/static/pool.webp" alt=""> 
+                 <h1>Pool Area</h1>
+                <p>
+                  Hotel pool areas are often designed to be relaxing retreats for
+                   guests. They can vary widely depending on the hotel's level of
+                    luxury and target audience
+                  </p>
+            </div>  
+            <div id="s1">
+                <img src="https://watermark.lovepik.com/photo/20211123/large/lovepik-gym-picture_500868937.jpg" alt="">
+                <h1>Gym Area</h1>
+                <p>
+                  Hotel gyms are designed to accommodate a range of fitness needs
+                  for guests. While the specifics can vary based on the hotel's size, location, and level of luxury
+                </p>
+            </div> 
+            <div id="s1">
+                <img src="https://i.pinimg.com/736x/b0/50/63/b050638322b3f5d9f80e7bd65fa94433.jpg" alt="">
+             <h1>Parking Area</h1>
+             <p>
+                Hotel parking areas can vary greatly depending on the property. Are you looking for details on 
+                valet parking, self-parking, or any specific features or services related to parking 
+             </p>
+            </div>  
+    </section>
+    <section class="main2">
+                <div id="s1">
+                    <img src="https://assets.bonappetit.com/photos/58f4f1980d80ef57896a7f11/16:9/w_2560%2Cc_limit/hotel-emma-lobby-san-antonio.jpg" alt=""> 
+                      <h1>Food Area</h1>
+                     <p>
+                        Hotel food areas a full-service dining option offering breakfast, lunch, and dinner with various cuisines.
+                        A space for drinks, light snacks, or small, often with a relaxed atmosphere.
+                     </p>
+                </div>   
+                <div id="s1">
+                    <img src="https://www.lottehotel.com/content/dam/lotte-hotel/lotte/guam/facilities/kids/kids-room/6334-2-1440-fac-LTGU.jpg.thumb.768.768.jpg" alt="">
+                     <h1>Kids Area</h1>
+                     <p>
+                       Hotels with kid-friendly amenities often include a dedicated kids' area keep younger entertained and engaged. Here are some
+                        find in a hotel kids’ area
+                      </p>
+                </div>
+                <div id="s1">
+                    <img src="https://www.pearlhotelbd.com/images/business-centre-pearl-hotel.jpg" alt="">
+                     <h1>Business Center Area</h1> 
+                     <p>
+                       A hotel business center is designed to cater to the needs of business travelers, offering
+                       various amenities and services to help with work-related tasks.
+                      </p>    
+            </div>
+    </section>
+    <br><br>  
+    <footer>
+      <p>&copy; 2024 Sohil Hotel Room Price Project. All rights reserved.</p>
+    </footer>  
+      
+</body>
+</html>
